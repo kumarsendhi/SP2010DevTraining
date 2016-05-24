@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Training Ribbon Control" ActivateOnDefault="FALSE" Description="Activating this feature adds the appropriate ribbon controls to their various locations in the training site" Id="a702adc4-6436-4718-9e0e-48291fdd91e8" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="RC_Classes_Register\Elements.xml" />
+  </ElementManifests>
+</Feature>

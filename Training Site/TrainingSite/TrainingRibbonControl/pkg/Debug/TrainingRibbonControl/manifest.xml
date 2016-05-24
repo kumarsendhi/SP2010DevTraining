@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b02ad475-ad79-408b-b4c6-37693b169570" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="TrainingRibbonControl.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="TrainingRibbonControl_Feature_TrainingRibbonControl\Feature.xml" />
+  </FeatureManifests>
+</Solution>

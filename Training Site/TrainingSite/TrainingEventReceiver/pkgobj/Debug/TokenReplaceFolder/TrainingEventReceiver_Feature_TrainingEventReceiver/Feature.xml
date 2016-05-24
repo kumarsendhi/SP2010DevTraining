@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" ActivateOnDefault="FALSE" Description="Activating this feature adds necessary custom events." Id="288c8217-2a25-4eec-a929-edf3eeb28c4a" Scope="Web" Title="Training Event Receiver">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Training Event Receiver" ActivateOnDefault="FALSE" Description="Activating this feature adds necessary custom events." Id="288c8217-2a25-4eec-a929-edf3eeb28c4a" Scope="Web">
   <ElementManifests>
     <ElementManifest Location="ER_Classes_ItemAdded\Elements.xml" />
     <ElementManifest Location="ER_Registrations_ItemAdding\Elements.xml" />
