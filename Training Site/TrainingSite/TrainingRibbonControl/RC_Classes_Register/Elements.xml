@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="RC_Classes_Register"
+                Location="CommandUI.Ribbon"
+                RegistrationType="List"
+                RegistrationId="100">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.ListItem.Actions.Controls._children">
+          <Button Id="bRegister" Alt="Register" Command="Register"/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>

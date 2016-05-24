@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" ActivateOnDefault="FALSE" Description="Activating this feature add Classes content type, list definition and list instance to the web." Id="46519917-edd7-4074-b5ca-2780b443a759" ReceiverAssembly="Training_Classes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30fb7ff2fbae8f07" ReceiverClass="Training_Classes.Features.Feature_TrainingClass.Feature_TrainingClassEventReceiver" Scope="Web" Title="Training Classes">
+  <ElementManifests>
+    <ElementManifest Location="CT_Class\Elements.xml" />
+    <ElementManifest Location="CourseTitle\Elements.xml" />
+    <ElementManifest Location="Trainer\Elements.xml" />
+    <ElementManifest Location="Venue\Elements.xml" />
+    <ElementManifest Location="Registrations\Elements.xml" />
+    <ElementManifest Location="TotalSeats\Elements.xml" />
+    <ElementManifest Location="OpenSeats\Elements.xml" />
+    <ElementManifest Location="L_ClassInstance\Elements.xml" />
+    <ElementManifest Location="L_Class\Elements.xml" />
+    <ElementFile Location="L_Class\Schema.xml" />
+  </ElementManifests>
+</Feature>

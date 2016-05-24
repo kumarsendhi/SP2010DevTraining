@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="30f55ebb-a4b7-4d3a-b2e4-aaa20936acbc" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Training_Courses.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Training_Courses_Feature_TrainingCourses\Feature.xml" />
+  </FeatureManifests>
+</Solution>

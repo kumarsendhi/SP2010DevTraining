@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{26DDE95B-311E-45C0-BBA6-5094773A272B}" Type="Lookup" List="Lists/Courses" ShowField="Title" Name="CourseTitle" DisplayName="Course Title" Required="FALSE" Group="Training Site Columns"/>
+  <Field ID="{25A98C28-CF1D-4F55-AA77-B283C0575422}" Type="Lookup" List="Lists/Trainers" ShowField="FullName" Name="Trainer" DisplayName="Trainer" Required="FALSE" Group="Training Site Columns"/>
+  <Field ID="{2B13861E-E2E1-4BB0-B82B-F4AEB754449E}" Type="Choice" Name="Venue" DisplayName="Venue" Required="FALSE" Group="Training Site Columns">
+    <CHOICES>
+      <CHOICE>Chicago</CHOICE>
+      <CHOICE>Denver</CHOICE>
+      <CHOICE>Los Angeles</CHOICE>
+      <CHOICE>New York</CHOICE>
+      <CHOICE>Orlando</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field ID="{5941C6CA-6954-4837-8E1F-8E0EC83A3EA0}" Type="Number" Decimals="0" Min="0" Name="Registrations" DisplayName="Registrations" Required="FALSE" Group="Training Site Columns"/>
+  <Field ID="{AE0603BD-A18D-4354-9233-5A5DDAD7EE4B}" Type="Number" Decimals="0" Min="0" Name="TotalSeats" DisplayName="Total Seats" Required="FALSE" Group="Training Site Columns"/>
+  <Field ID="{F09920A5-4651-4ACA-8D84-A89C968A484E}" Type="Calculated" ResultType="Number" ReadOnly="TRUE" Name="OpenSeats" DisplayName="OpenSeats" Required="FALSE" Group="Training Site Columns">
+    <Formula>=TotalSeats-Registrations</Formula>
+    <FieldRefs>
+      <FieldRef Name="TotalSeats" ID="{AE0603BD-A18D-4354-9233-5A5DDAD7EE4B}"/>
+      <FieldRef Name="Registrations" ID="{5941C6CA-6954-4837-8E1F-8E0EC83A3EA0}"/>
+    </FieldRefs>
+  </Field>
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01002d8405cfe2ef4efc8d2038cc63aeaa9a"
+               Name="Class"
+               Group="Training Content Types"
+               Description="Defines a Class"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{26DDE95B-311E-45C0-BBA6-5094773A272B}" Name="CourseTitle" DisplayName="Course Title" Required="TRUE"/>
+      <FieldRef ID="{25A98C28-CF1D-4F55-AA77-B283C0575422}" Name="Trainer" DisplayName="Trainer" Required="FALSE"/>
+      <FieldRef ID="{2B13861E-E2E1-4BB0-B82B-F4AEB754449E}" Name="Venue" DisplayName="Venue" Required="FALSE"/>
+      <FieldRef ID="{5941C6CA-6954-4837-8E1F-8E0EC83A3EA0}" Name="Registrations" DisplayName="Registrations" Required="FALSE"/>
+      <FieldRef ID="{AE0603BD-A18D-4354-9233-5A5DDAD7EE4B}" Name="TotalSeats" DisplayName="Total Seats" Required="FALSE"/>      
+      <FieldRef ID="{F09920A5-4651-4ACA-8D84-A89C968A484E}" Name="OpenSeats" DisplayName="Open Seats" Required="FALSE"/>
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Training Site Creation" Description="Activating this feature will create Training Site Collection" Id="f0b02a7d-3348-4c79-89e0-c06c541e93bd" ReceiverAssembly="TrainingSiteCreation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b356bb9cb449b9df" ReceiverClass="TrainingSiteCreation.Features.Feature_TrainingSiteCollection.Feature_TrainingSiteCollectionEventReceiver" Scope="WebApplication"></Feature>

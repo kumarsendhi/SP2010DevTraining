@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{293d5f06-8b97-45dd-9646-b4298d79a48a}"
+       Name="OpenSeats"
+       DisplayName="Open Seats"
+       Type="Calculated"
+       Required="FALSE"
+       ResultType="Number"
+       ReadOnly="TRUE"
+       Group="Training Site Columns">
+    <Formula>=TotalSeats-Registrations</Formula>
+    <FieldRefs>
+      <FieldRef ID="{6fea3606-1a8c-46c0-8bfa-c4d0651601d5}" Name="TotalSeats"></FieldRef>
+      <FieldRef ID="{abae7676-6f4e-4867-941e-d30ee8d9dec3}" Name="Registrations"></FieldRef>
+    </FieldRefs>
+  </Field>
+</Elements>

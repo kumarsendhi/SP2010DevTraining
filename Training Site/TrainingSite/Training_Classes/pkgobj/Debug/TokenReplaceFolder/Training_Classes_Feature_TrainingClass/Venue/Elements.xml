@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c44aec99-6eae-4edc-ac6d-9f6a22734081}"
+       Name="Venue"
+       DisplayName="Venue"
+       Type="Choice"
+       Required="FALSE"
+       Group="Training Site Columns">
+    <CHOICES>
+      <CHOICE>Bangalore</CHOICE>
+      <CHOICE>Chennai</CHOICE>
+      <CHOICE>Hyderabad</CHOICE>
+      <CHOICE>Pune</CHOICE>
+      <CHOICE>Gurgoan</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

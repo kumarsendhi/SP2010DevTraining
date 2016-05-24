@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d82b74ee-13df-4b1a-845e-efa62e94eb30}"
+       Name="CourseDesc"
+       DisplayName="Course Description"
+       Type="Note"
+       Required="True"
+       Group="Training Site Columns">
+  </Field>
+</Elements>

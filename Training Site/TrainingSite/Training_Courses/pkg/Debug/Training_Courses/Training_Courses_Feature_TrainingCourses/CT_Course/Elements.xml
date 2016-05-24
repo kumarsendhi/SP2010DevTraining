@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100824949A987B846C388D6780EE746DB6D" Name="Course" Group="Training Content Types" Description="Defines Course" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{d82b74ee-13df-4b1a-845e-efa62e94eb30}" DisplayName="Course Description" Required="True" Name="CourseDesc" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

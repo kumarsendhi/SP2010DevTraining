@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" ActivateOnDefault="FALSE" Description="Activating this feature will enable Trainer and Registration list in site." Id="75570012-82ba-4f42-a479-67fa76710f89" ReceiverAssembly="TrainerandRegistrationList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=77b491cfb675e40d" ReceiverClass="TrainerandRegistrationList.Features.Feature_TrainingLists.Feature_TrainingListsEventReceiver" Scope="Web" Title="Trainer and Registration List">
+  <ElementManifests>
+    <ElementManifest Location="LI_Trainers\Elements.xml" />
+    <ElementManifest Location="L_Trainers\Elements.xml" />
+    <ElementFile Location="L_Trainers\Schema.xml" />
+    <ElementManifest Location="L_RegistrationInstance\Elements.xml" />
+    <ElementManifest Location="L_Registration\Elements.xml" />
+    <ElementFile Location="L_Registration\Schema.xml" />
+  </ElementManifests>
+</Feature>

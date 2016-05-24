@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6fea3606-1a8c-46c0-8bfa-c4d0651601d5}"
+       Name="TotalSeats"
+       DisplayName="Total Seats"
+       Type="Number"
+       Decimals="0"
+       Min="0"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

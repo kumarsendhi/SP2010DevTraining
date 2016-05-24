@@ -1,0 +1,1 @@
+bin\Debug\Training_Classes.wsp

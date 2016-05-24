@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{907330d9-052c-4f1e-8289-5cc04f47dc09}"
+       Name="Trainer"
+       DisplayName="Trainer"
+       Type="Lookup"
+       List="Lists/trainers"
+       ShowField="FullName"
+       Required="FALSE"
+       Group="Training Site Columns">
+  </Field>
+</Elements>

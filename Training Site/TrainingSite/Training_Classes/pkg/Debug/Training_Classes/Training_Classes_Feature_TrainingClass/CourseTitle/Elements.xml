@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{b3c43467-dc8c-4354-96c4-1fdb0013cd4e}"
+       Name="CourseTitle"
+       DisplayName="Course Title"
+       Type="Lookup"
+       List ="Lists/Courses"
+       ShowField="Title"
+       Required="FALSE"
+       Group="Training Site Columns">
+  </Field>
+</Elements>

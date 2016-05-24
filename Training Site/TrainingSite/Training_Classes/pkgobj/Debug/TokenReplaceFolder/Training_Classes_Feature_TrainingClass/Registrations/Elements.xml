@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{abae7676-6f4e-4867-941e-d30ee8d9dec3}"
+       Name="Registrations"
+       DisplayName="Registrations"
+       Type="Number"
+       Decimals="0"
+       Min="0"
+       Required="FALSE"
+       Group="Training Site Columns">
+  </Field>
+</Elements>

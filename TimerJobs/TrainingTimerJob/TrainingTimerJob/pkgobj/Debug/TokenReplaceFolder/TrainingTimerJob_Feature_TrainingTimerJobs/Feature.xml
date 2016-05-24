@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Training Timer Job" ActivateOnDefault="FALSE" AlwaysForceInstall="TRUE" Hidden="TRUE" Id="2dadf062-8002-4c97-8261-dd9e42c981d4" ReceiverAssembly="TrainingTimerJob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=89946b76a9c3fd24" ReceiverClass="TrainingTimerJob.Features.Feature_TrainingTimerJobs.Feature_TrainingTimerJobsEventReceiver" Scope="WebApplication"></Feature>

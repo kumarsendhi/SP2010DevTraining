@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Change Root Web Information" ActivateOnDefault="FALSE" Description="Feature changes the title and description for the training site" Id="21de50cc-2dbe-4f12-9752-ec968f769b7e" ReceiverAssembly="TrainingSiteTitle, Version=1.0.0.0, Culture=neutral, PublicKeyToken=85fec32af28affab" ReceiverClass="TrainingSiteTitle.Features.Feature_ChangeRootWeb.Feature_ChangeRootWebEventReceiver" Scope="Site"></Feature>

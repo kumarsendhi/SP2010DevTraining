@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8192667D-C131-49C5-8333-2B7067086616}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrainingEventReceiver</RootNamespace>
+    <AssemblyName>TrainingEventReceiver</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.5</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ER_Classes_ItemAdded\ER_Classes_ItemAdded.cs" />
+    <Compile Include="ER_RegistrationList_ItemDeleting\ER_RegistrationList_ItemDeleting.cs" />
+    <Compile Include="ER_Registrations_ItemAdded\ER_Registrations_ItemAdded.cs" />
+    <Compile Include="ER_Registrations_ItemAdding\ER_Registrations_ItemAdding.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ER_Classes_ItemAdded\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{36ca829a-1306-4174-b43d-c797d06010d0}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_RegistrationList_ItemDeleting\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f74d4bf0-76bb-4665-bc9e-efd47fb71ba1}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_Registrations_ItemAdded\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9c327ace-e520-47f9-a770-0e1f6d01b1f8}</SharePointProjectItemId>
+    </None>
+    <None Include="ER_Registrations_ItemAdding\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4bd600f6-11cd-435d-a858-d71d89d64a35}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature_TrainingEventReceiver\Feature_TrainingEventReceiver.feature">
+      <FeatureId>{0e5cb87b-f6c7-4346-9e59-bd84f7ed643a}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{ce5044e4-c4b8-4829-8163-bf74f15bef2c}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ER_Classes_ItemAdded\Elements.xml" />
+    <Content Include="ER_RegistrationList_ItemDeleting\Elements.xml" />
+    <Content Include="ER_Registrations_ItemAdded\Elements.xml" />
+    <Content Include="ER_Registrations_ItemAdding\Elements.xml" />
+    <Content Include="Features\Feature_TrainingEventReceiver\Feature_TrainingEventReceiver.Template.xml">
+      <DependentUpon>Feature_TrainingEventReceiver.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

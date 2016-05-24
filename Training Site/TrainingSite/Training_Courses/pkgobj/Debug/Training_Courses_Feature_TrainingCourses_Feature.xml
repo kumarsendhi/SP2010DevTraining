@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Training Courses" ActivateOnDefault="FALSE" Description="Activating this feature will add Courses Content Type to this web." Id="f535100f-d517-4dfe-9f2c-737855fbc05c" ReceiverAssembly="Training_Courses, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f8b0620c9faafa2" ReceiverClass="Training_Courses.Features.Feature_TrainingCourses.Feature_TrainingCoursesEventReceiver" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="CT_Course\Elements.xml" />
+    <ElementManifest Location="SC_CourseDesc\Elements.xml" />
+    <ElementManifest Location="L_CourseInstance\Elements.xml" />
+    <ElementManifest Location="L_Course\Elements.xml" />
+    <ElementFile Location="L_Course\Schema.xml" />
+  </ElementManifests>
+</Feature>
